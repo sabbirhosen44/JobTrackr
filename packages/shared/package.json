@@ -1,0 +1,21 @@
+{
+  "name": "@jobtrackr/shared",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup && tsc --emitDeclarationOnly --declaration --outDir dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@jobtrackr/eslint-config": "workspace:*",
+    "@jobtrackr/typescript-config": "workspace:*",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3"
+  }
+}
